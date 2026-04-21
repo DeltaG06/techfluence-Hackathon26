@@ -46,4 +46,6 @@ htmlcov/
 # ── Build / dist ─────────────────────────────────────────
 dist/
 build/
-*.egg-info/
+*.egg-info/
+PS_20174392719_149120scored_transactions4439457_log.csv
+scored_transactions.csv
