@@ -1,0 +1,93 @@
+@import "tailwindcss";
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-sans: 'Montserrat', sans-serif;
+  
+  /* Custom colors for our neon theme */
+  --color-neon-green: var(--primary-green);
+  --color-neon-glow: var(--primary-glow);
+  
+  --color-app-dark: #03001C;
+  --color-app-panel: #1F1F1F;
+  --color-app-border: #222222;
+
+  --animate-fade-in: fade-in 0.8s ease-out;
+  --animate-slide-up: slide-up 0.5s ease-out forwards;
+  --animate-pop-in: pop-in 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes slide-up {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes pop-in {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+}
+
+@layer base {
+  :root {
+    --primary-green: #16a34a;
+    --primary-glow: rgba(22, 163, 74, 0.3);
+  }
+
+  .dark {
+    --primary-green: #39ff14;
+    --primary-glow: rgba(57, 255, 20, 0.3);
+  }
+
+  body {
+    @apply antialiased transition-colors duration-300;
+  }
+  
+  .dark body {
+    @apply text-slate-300 bg-app-dark;
+  }
+  
+  :root:not(.dark) body {
+    @apply text-slate-900 bg-slate-50;
+  }
+}
+
+@layer utilities {
+  .pop-out {
+    @apply transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1;
+  }
+  .dark .pop-out {
+    @apply hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)] hover:border-slate-700/50;
+  }
+  :root:not(.dark) .pop-out {
+    @apply hover:shadow-xl hover:border-slate-200;
+  }
+
+  .neon-border {
+    @apply border border-transparent transition-colors duration-300 hover:border-neon-green/50;
+  }
+  
+  .neon-text {
+    @apply text-neon-green drop-shadow-[0_0_8px_var(--color-neon-glow)];
+  }
+
+  .glass-panel {
+    @apply backdrop-blur-md transition-all duration-300;
+  }
+  
+  .dark .glass-panel {
+    @apply bg-app-panel/90 border border-white/5 shadow-[inset_1px_1px_1px_rgba(255,255,255,0.05),inset_-1px_-1px_2px_rgba(0,0,0,0.5),4px_4px_10px_rgba(0,0,0,0.4)];
+  }
+  
+  :root:not(.dark) .glass-panel {
+    @apply bg-white/90 border border-white shadow-[inset_1px_1px_2px_rgba(255,255,255,1),inset_-1px_-1px_3px_rgba(0,0,0,0.05),4px_4px_12px_rgba(0,0,0,0.05)];
+  }
+
+  /* Delay utilities for staggered animations */
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+  .delay-400 { animation-delay: 400ms; }
+}
