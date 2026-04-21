@@ -1,0 +1,71 @@
+DEPARTMENT-LEVEL SPENDING CONTROLS & EXPENSE POLICY
+Internal Finance Policy — All Departments
+Version 4.0 | Last Reviewed: Q1 2024
+
+1. DEPARTMENTAL TRANSACTION LIMITS & BASELINES
+   MARKETING (PAYMENT category):
+   - Typical transaction range: $100 – $15,000 per payment.
+   - Single transactions above $20,000 require VP Marketing approval.
+   - Payments to new media vendors require prior campaign brief sign-off.
+   - Aggregate monthly spend above $500,000 triggers a finance committee review.
+
+   FINANCE (TRANSFER category):
+   - Typical transaction range: $1,000 – $200,000 per transfer.
+   - TRANSFER transactions above $500,000 require CFO approval.
+   - TRANSFER transactions above $1,000,000 require CFO + Board notification.
+   - All Finance-initiated TRANSFER transactions must have a corresponding
+     purchase order (PO) or approved budget line item.
+   - Transfers to accounts outside the approved counterparty list require
+     enhanced due diligence (EDD) before processing.
+
+   OPERATIONS (CASH_OUT category):
+   - Typical transaction range: $500 – $50,000.
+   - CASH_OUT transactions above $100,000 require COO and CFO dual approval.
+   - CASH_OUT to customer accounts (non-merchant) is prohibited without explicit
+     compliance approval and documented business justification.
+   - All CASH_OUT transactions must be reconciled against operational invoices
+     within 5 business days.
+
+   HR (DEBIT category):
+   - Covers payroll, contractor payments, and benefits disbursements.
+   - Individual DEBIT transactions above $50,000 require HR Director + CFO approval.
+   - Payroll runs outside the scheduled payroll calendar (1st and 15th of each month)
+     require HR Director authorization and Finance sign-off.
+   - DEBIT transactions to non-employee personal accounts require Finance Director
+     approval and must be documented as approved advances or settlements.
+
+   ENGINEERING (CASH_IN category):
+   - Covers software licenses, SaaS subscriptions, and infrastructure payments.
+   - Individual transactions above $25,000 require Engineering VP approval.
+   - Annual subscription renewals above $100,000 require IT committee review.
+   - Emergency infrastructure purchases above $10,000 require CTO notification.
+
+2. GENERAL EXPENSE CONTROLS (ALL DEPARTMENTS)
+   - Segregation of Duties: The employee who requests a payment must never be
+     the same employee who approves or processes it.
+   - Receipt Requirements: All transactions above $50 require documented proof of
+     purchase. Transactions above $500 require itemized receipts.
+   - Submission Deadline: Expense reports must be submitted within 30 days of
+     the transaction date. Late submissions require manager justification.
+   - No personal purchases may be made using corporate accounts or payment methods.
+   - Split transactions (deliberately breaking one purchase into multiple smaller
+     transactions to bypass approval thresholds) are prohibited and constitute fraud.
+
+3. AUDIT TRAIL REQUIREMENTS
+   - All transactions must be logged with: initiating employee ID, approver ID,
+     timestamp, purpose/category, vendor ID, and final amount.
+   - Transaction logs are immutable. Any attempt to modify or delete a log entry
+     is a serious compliance violation requiring immediate escalation to the CCO.
+   - Monthly reconciliation reports must be reviewed by an independent Finance
+     team member not involved in the original transaction processing.
+   - Exception reports (flagged transactions) must be resolved within 10 business days.
+     Unresolved exceptions escalate automatically to department VP.
+
+4. ANTI-FRAUD TRAINING & AWARENESS
+   - All employees handling financial transactions must complete annual AML and
+     fraud awareness training (minimum 4 hours per year).
+   - Employees must immediately report any transaction they believe to be suspicious
+     to the compliance hotline — failure to report is itself a policy violation.
+   - Business Email Compromise (BEC) awareness: Never process payment instructions
+     received solely via email without independent phone verification, regardless
+     of how urgent the request appears or how senior the sender claims to be.
