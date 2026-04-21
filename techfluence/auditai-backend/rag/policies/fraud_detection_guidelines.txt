@@ -1,0 +1,58 @@
+FATF RED FLAGS & INTERNAL FRAUD DETECTION GUIDELINES
+Based on Financial Action Task Force (FATF) Guidance
+Adapted for Internal Audit Use — Version 1.4
+
+1. TRANSACTION STRUCTURING RED FLAGS
+   - Multiple transactions between $8,000 – $9,999 within any 48-hour window from
+     the same account or related accounts (classic structuring / smurfing pattern).
+   - Repeated payments to the same payee in amounts just below approval thresholds
+     (e.g., multiple $4,900 payments instead of a single $9,800 payment).
+   - Sequential transactions in identical or near-identical amounts within minutes of
+     each other from the same account.
+   - Payments in suspiciously round amounts (exactly $5,000.00, $10,000.00, etc.)
+     without an invoice or business justification.
+
+2. ACCOUNT TAKEOVER & INSIDER FRAUD INDICATORS
+   - A single employee account responsible for a disproportionately high volume of
+     high-value transactions compared to peers in the same department.
+   - Transactions initiated by an employee in a department inconsistent with their
+     role (e.g., an HR employee initiating Finance TRANSFER transactions).
+   - Transactions approved by the same person who initiated them (dual control failure).
+   - Multiple failed authentication attempts followed immediately by a large transaction.
+   - Transactions processed during an employee's known leave or vacation period.
+
+3. VENDOR FRAUD RED FLAGS
+   - Payments to vendors that have never received a payment before (no transaction history).
+   - Vendor bank account details changed within 30 days prior to a large payment.
+   - Multiple payments to different vendors sharing the same bank account number.
+   - Payments to vendors whose name or tax ID does not match the approved vendor register.
+   - Vendor transaction count below 3 combined with payment amount above department average
+     is a high-risk combination requiring immediate review.
+
+4. CASH-OUT & TRANSFER ABUSE PATTERNS
+   - CASH_OUT transactions to customer accounts (accounts starting with "C") are a
+     primary PaySim fraud signal. These transactions should always be reviewed when
+     the balance drain exceeds 80%.
+   - TRANSFER transactions exceeding $1,000,000 to a customer (non-merchant) account
+     require escalation to the Chief Compliance Officer (CCO) immediately.
+   - Any CASH_OUT or TRANSFER where the original account balance is fully drained
+     (oldBalance – newBalance = originalBalance, i.e., 100% drain) is a critical fraud
+     indicator and must be blocked pending investigation.
+   - DEBIT transactions processed on weekends or public holidays with amounts exceeding
+     the 99th percentile for that department are flagged for review.
+
+5. VELOCITY & BEHAVIORAL ANOMALY INDICATORS
+   - Transaction amount more than 3x the department's 90-day rolling average is a
+     significant anomaly ("amount_vs_dept_avg" ratio > 3.0 triggers HIGH classification).
+   - An account's transaction frequency increasing by more than 200% in a 7-day period
+     compared to the prior 30-day average indicates potential account compromise.
+   - High anomaly scores (above 0.75 on normalized isolation forest score) combined
+     with destination account type being a customer account requires human review.
+   - Transactions in the top 1% of all amounts (above the 99th percentile) should
+     always be reviewed regardless of other risk factors.
+
+6. GEOGRAPHIC & TIMING RISK INDICATORS
+   - Transactions initiated between 23:00 and 05:00 local time carry elevated risk.
+   - Weekend transactions (is_weekend = 1) with amounts above $10,000 must be reviewed.
+   - Transactions to or from accounts in multiple jurisdictions within 24 hours
+     without a documented business reason constitute a FATF geographic risk indicator.

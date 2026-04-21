@@ -1,0 +1,51 @@
+WIRE TRANSFER & PAYMENT AUTHORIZATION POLICY
+Corporate Treasury & Finance Controls
+Version 2.1 | Approved by CFO
+
+1. APPROVAL TIERS FOR OUTGOING PAYMENTS
+   - Up to $999:         Employee self-authorization (low-risk transactions).
+   - $1,000 – $4,999:   Department Manager approval required within 24 hours.
+   - $5,000 – $9,999:   Senior Manager or Director approval required.
+   - $10,000 – $49,999: CFO or VP Finance approval required. Dual control mandatory.
+   - $50,000 and above: CFO + CEO approval required. Board notification within 48 hours.
+   - Any amount to a NEW vendor (fewer than 3 prior transactions): requires
+     Director-level approval and vendor verification before processing.
+
+2. WIRE TRANSFER SECURITY CONTROLS (DUAL CONTROL)
+   - ALL wire transfers regardless of amount require two authorized individuals:
+       (1) INITIATOR: Prepares and submits the transfer request.
+       (2) VERIFIER: A separate authorized employee who independently confirms
+           the details and releases the transfer.
+   - The initiator and verifier must NEVER be the same person. Violation of this
+     control is grounds for immediate termination.
+   - Callback verification: Before releasing any wire transfer over $5,000,
+     the verifier must call the payee using a phone number on record (NOT from
+     the payment instruction email) to confirm the transaction.
+
+3. AFTER-HOURS TRANSACTION CONTROLS
+   - Standard business hours are defined as Monday to Friday, 09:00 – 17:00 local time.
+   - Any transaction initiated outside business hours requires:
+       * Pre-authorization from a manager submitted before 17:00 on the prior business day.
+       * Email notification to the compliance team within 1 hour of processing.
+   - Weekend transactions (Saturday and Sunday) are prohibited unless pre-approved by
+     the CFO with documented business justification.
+   - Transactions initiated on public holidays require VP or C-suite approval.
+
+4. NEW VENDOR ONBOARDING REQUIREMENTS
+   - No payment may be made to a vendor that has not completed the vendor onboarding process.
+   - Vendors must provide: registered business name, tax ID, bank account details,
+     and contact information verified by a secondary source.
+   - First payment to any new vendor requires Finance Director sign-off.
+   - Payments to vendors with fewer than 3 historical transactions in the system
+     are flagged as HIGH RISK and require manual compliance review.
+   - Changes to existing vendor bank account details (routing number, account number)
+     require re-verification using the callback protocol, regardless of amount.
+
+5. PROHIBITED TRANSACTIONS
+   - Cash payments above $500 are prohibited for all corporate expenditure.
+   - Payments to personal bank accounts (non-corporate accounts) are prohibited without
+     CFO approval and must be documented as a salary advance or approved reimbursement.
+   - Transactions to jurisdictions on the OFAC Specially Designated Nationals (SDN) list
+     are strictly prohibited and must be blocked immediately.
+   - Payments to customer accounts (as opposed to business/merchant accounts) via
+     TRANSFER or CASH_OUT category are HIGH RISK and require compliance review.
